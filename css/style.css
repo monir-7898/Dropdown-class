@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+#mem{
+    padding: 0 0 0 50px;
+    font-weight: 600;
+    color:black;
+    font-size: 30px;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Heebo', sans-serif;
+    
+
+}
+#ser{
+
+    border-width: 10px;
+}
+#sing_up a{
+    color: black;
+}
+#sing_up{
+    margin-left: 50px;
+    text-decoration: none;
+    border-style: none;
+    background-color:#BD8F02;
+    width: 150px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 20px;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Heebo', sans-serif;
+}
+
+#log{
+    margin-left:20px ;
+    color: black;
+    text-decoration: none;
+    border-style: none;
+    background-color:#BD8F02;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 20px;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Heebo', sans-serif;
+
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+nav{
+    background-color: white;
+    width: 100%;
+    margin: auto;
+   
+}
+
+nav ul li{
+    display: inline-block;
+    position: relative;
+}
+nav ul li a{
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    color:black;
+    display: block;
+    padding: 15px 40px;
+    transition: 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+
+nav ul li a::before{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+#img_1{
+    width: 150px;
+    margin: 10px 15px;
+}
+
+div p{
+    padding: 20px 20px;
+    border-top-right-radius: 60px;
+    width: 40%;
+    background-color:#009FD2;
+    height: 70px;
+    font-family: 'DM Sans', sans-serif;
+}
+nav ul li a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    transition:0.5s ;
+}
+nav ul li:hover > a::after,
+nav ul li:hover > a::before{
+    width: 100%;
+}
+nav ul li ul{
+    margin: 20px;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color:#B2D7E3;
+    width: 200px;
+    transition: 0.5s;
+}
+nav ul li:hover > ul{
+    margin-top: 0;
+    opacity: 1;
+    visibility: visible;
+}
+nav ul li ul li{
+    display: block;
+    margin-bottom: 10px;
+}
+nav ul li  ul li a::before,
+nav ul li ul li a::after{
+    display: none;
+}
+nav ul li ul li:hover > a{
+    background-color:rgba(255, 250, 250, 0.719);
+}
+nav ul li ul li ul{
+    left: 100%;
+    top: 0;
+}
+nav ul li ul li ul li ul{
+    color: white;
+}
+
